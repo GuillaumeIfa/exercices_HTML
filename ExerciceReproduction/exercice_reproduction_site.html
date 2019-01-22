@@ -3,36 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Exercice_Reproduction_Site</title>
-	<meta name="description" content="Ceci est une page d'exercice de reproduction d'un site.">
+	<meta name="description" content="Ceci est une page d'exercice dont le but est de recréer un site présenté par l'intervenant.">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<style>
 		body
 		{
 			font-family: 'Montserrat', sans-serif;
 		}
+
 		table
 		{
 			border-collapse: collapse;
 		}
+
 		td,th
 		{
 			border: 1px solid black;
 		}
+
+		.img
+		{
+			width: 100%;
+		}
 	</style>
 </head>
 	<body>
-		<span id="accueil"><span>
-		<nav>
-			<ul>
-				<li>JCVD<a href="./exercice_reproduction_site.html#jcvd"> ICI</a></li>
-				<li>Patrick Sebastien<a href="./exercice_reproduction_site.html#patrick"> ICI</a></li>
-				<li>Classement Coupe du Monde 2018<a href="./exercice_reproduction_site.html#foot"> ICI</a></li>
-				<li>Tableau<a href="./exercice_reproduction_site.html#tableau"> ICI</a></li>
-			</ul>
-		</nav>
+		<span id="accueil"></span>
+		
+		<ul>
+			<li>JCVD<a href="./exercice_reproduction_site.html#jcvd"> ICI</a></li>
+			<li>Patrick Sebastien<a href="./exercice_reproduction_site.html#patrick"> ICI</a></li>
+			<li>Classement Coupe du Monde 2018<a href="./exercice_reproduction_site.html#foot"> ICI</a></li>
+			<li>Tableau<a href="./exercice_reproduction_site.html#tableau"> ICI</a></li>
+		</ul>
+		
 		<span id="jcvd"></span>
 		<h1>JCVD</h1>
-		<img src="./IMG/jcvd.jpg" width="100%" alt="Photo de JeanClaude Vandamme avec un petit chien.">
+		<img class="img" src="./IMG/jcvd.jpg" alt="Photo de JeanClaude Vandamme avec un petit chien.">
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe cupiditate corrupti, nostrum quia! Ipsa odit illum pariatur, quia vitae. Dolor quisquam perspiciatis nostrum eveniet, adipisci aliquam, aut commodi natus in.
 		</p>
@@ -74,8 +81,8 @@
 		</p>
 
 		<a href="./exercice_reproduction_site.html#accueil">retour en haut</a>
-		<h1>Patrick Sebastien</h1>
 		<span id="patrick"></span>
+		<h1>Patrick Sebastien</h1>
 
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus reprehenderit autem numquam ut sint quas enim quidem, eius aliquid doloremque assumenda deleniti dolorem eaque. Maxime error vel nobis ipsam at.
@@ -97,9 +104,9 @@
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus reprehenderit autem numquam ut sint quas enim quidem, eius aliquid doloremque assumenda deleniti dolorem eaque. Maxime error vel nobis ipsam at.
 		</p>
 		<a href="./exercice_reproduction_site.html#accueil">retour en haut</a>
-		<h1>Résultat de la coupe du monde 2018</h1>
 		<span id="foot"></span>
-		<img src="./IMG/coupe.png" width="250px" alt="Image du logo de la coupe du Monde de football 2018">
+		<h1>Résultat de la coupe du monde 2018</h1>
+		<img src="./IMG/coupe.png" width="250" alt="Image du logo de la coupe du Monde de football 2018">
 		<ol>
 			<li>France</li>
 			<li>Croatie</li>
@@ -116,25 +123,29 @@
 
 		<table>
 			<thead>
-				<td>Nom</td>
-				<td>Age</td>
-				<td>Pays</td>
+				<tr>
+					<td>Nom</td>
+					<td>Age</td>
+					<td>Pays</td>
+				</tr>
 			</thead>
-			<tfoot>
-				<td>Nom</td>
-				<td>Age</td>
-				<td>Pays</td>
-			</tfoot>
 			<tr>
 				<td>Tartempion</td>
 				<td>27</td>
-				<td><img src="./IMG/france.jpg" width="150px" alt="Drapeau de la France"></td>
+				<td><img src="./IMG/france.jpg" width="150" alt="Drapeau de la France"></td>
 			</tr>
 			<tr>
 				<td>Vanderbruck</td>
 				<td>32</td>
-				<td><img src="./IMG/belgique.png" width="150px" alt="Drapeau de la Belgique"></td>
+				<td><img src="./IMG/belgique.png" width="150" alt="Drapeau de la Belgique"></td>
 			</tr>
+			<tfoot>
+				<tr>
+					<td>Nom</td>
+					<td>Age</td>
+					<td>Pays</td>
+				</tr>
+			</tfoot>
 		</table>
 		<a href="./exercice_reproduction_site.html#accueil">Retour en haut</a>
 	</body>
