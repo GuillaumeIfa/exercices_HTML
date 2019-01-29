@@ -23,45 +23,60 @@
 			<header>
 				<h3>Experiences Professionnelles</h3>
 			</header>
-			<p>
-				<b>Cinemeccanica,</b> Montreuil -- <i>Technicien de maintenance</i><br>
-				2016<br>
-				Maintenance et installation de projecteurs numériques
-			</p>
-			<p>
-				<b>CinéCentre,</b> Metz -- <i>Responsable Technique & Informatique</i><br>
-				2001 => 2016<br>
-				Gestion des projections (Programmation, Gestion logistique, Branchement multimédia, Création de DCP (Digital Cinema Package))<br>
-				Création, mise en place et Gestion du site internet (cinema-palace-cameo-metz.fr), Dépannage informatique
-			</p>
-			<p>
-				<b>Agence Intérim,</b> Meuse -- <i>Divers</i><br>
-				2000 => 2001<br>
-				Divers postes de manutention, menuiserie.
-			</p>
+			<article>
+				<h4>Cinemeccanica, Montreuil -- <i>Technicien de maintenance</i></h4>
+				<p>
+					2016<br>
+					Maintenance et installation de projecteurs numériques
+				</p>
+			</article>
+			<article>
+				<h4>CinéCentre, Metz -- <i>Responsable Technique & Informatique</i></h4>
+				<p>
+					2001 => 2016<br>
+					Gestion des projections (Programmation, Gestion logistique, Branchement multimédia, Création de DCP (Digital Cinema Package))<br>
+					Création, mise en place et Gestion du site internet (cinema-palace-cameo-metz.fr), Dépannage informatique
+				</p>
+			</article>
+			<article>
+				<h4>Agence Intérim, Meuse -- <i>Divers</i></h4>
+				<p>
+					2000 => 2001<br>
+					Divers postes de manutention, menuiserie.
+				</p>
+			</article>
 		</section>
 		<section>
 			<header>
 				<h3>Formations</h3>
 			</header>
-			<p>
-				<b>IFA,</b> Metz -- <i>Formation Professionelle</i><br>
-				2018<br>
-				Remise à noveau Informatique (HTML, CSS, PHP)
-			</p>
-			<p>
-				<b>Atelier Igloo,</b> Villers-les-Nancy -- <i>Formation Profesionnelle</i><br>
-				2014<br>
-				Webdesigner (Bases HTML, CSS, Joomla, The Gimp)
-			</p>
-			<p>
-				<b>Formats6,</b> Metz -- Projection Numérique<br>
-				2012<br>
-				Perfectionnement à la technique du cinéma numérique.
-			</p>
-			<p>
-				<b>Lycée Pro L.Richier,</b> Bar-le-Duc -- <i>BEP Menuiserie</i>
-			</p>
+			<article>
+				<h4>IFA, Metz -- <i>Formation Professionelle</i></h4>
+				<p>
+					2018<br>
+					Remise à noveau Informatique (HTML, CSS, PHP)
+				</p>
+			</article>
+			<article>
+				<h4>Atelier Igloo, Villers-les-Nancy -- <i>Formation Profesionnelle</i></h4>
+				<p>
+					2014<br>
+					Webdesigner (Bases HTML, CSS, Joomla, The Gimp)
+				</p>
+			</article>
+			<article>
+				<h4>Formats6, Metz -- Projection Numérique</h4>
+				<p>
+					2012<br>
+					Perfectionnement à la technique du cinéma numérique.
+				</p>
+			</article>
+			<article>
+				<h4>Lycée Pro L.Richier, Bar-le-Duc -- <i>BEP Menuiserie</i></h4>
+				<p>
+					1999
+				<p>
+			</article>
 		</section>
 		<section>
 			<header>
@@ -94,11 +109,39 @@
 					<li>Espagnol: Notions</li>
 				</ul>
 		</section>
-<!-- 		<section>
-	<header></header>
-	<p></p>
-</section> -->
-		<footer></footer>
+		<section>
+			<header>
+				<h3>Formulaire de Contact</h3>
+			</header>
+			<form action="index.html" method="POST">
+				<label for="nom">Nom:</label><br>
+				<input type="text" name="nom" id="nom"><br>
+				<label for="prenom">Prenom:</label><br>
+				<input type="text" name="prenom" id="prenom"><br>
+				<label for="courriel">Courriel:</label><br>
+				<input type="email" name="courriel" id="courriel"><br>
+				<label>Motif du message:</label>
+				<input type="radio" name="radio" value="renseignement">Renseignements 
+				<input type="radio" name="radio" value="embauche">Embauche 
+				<input type="radio" name="radio" value="insulte">Insultes <br>
+				<label for="sujet">Sujet:</label><br>
+				<input type="text" name="sujet" id="sujet"><br>
+				<label for="pays">Pays</label>
+				<select name="pays" id="pays">
+					<option value="france">France</option>
+					<option value="belgique">Belgique</option>
+					<option value="suisse">Suisse</option>
+					<option value="luxembourg">Luxembourg</option>
+					<option value="allemagne">Allemagne</option>
+				</select><br>
+				<label for="message">Message:</label><br>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message"></textarea><br>
+				<input type="button" value="Envoyer !">
+				<input type="reset">
+			</form>
+		</section>
+
+		<footer>GllmR_2019</footer>
 		
 	</body>
 </html>
