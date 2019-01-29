@@ -3,7 +3,7 @@ body
 	width: 60%;
 	text-align: justify;
 	background-color: black;
-	color: chartreuse;
+	color: lime;
 	font-family: monospace;
 	margin: auto;
 }
@@ -26,19 +26,45 @@ a:hover
 h1
 {
 	text-align: center;
+	letter-spacing: 5px;
 }
 
 h3
 {
 	font-size: 20px;
+	color: mediumvioletred;
+}
+
+h4
+{
+	color: turquoise;
 }
 
 li
 {
 	list-style: none;
+	padding: 5px;
 }
 
 input, select
 {
 	margin: 15px;
+}
+
+p:hover
+{
+	font-size: 20px;
+	color: yellow;
+}
+
+li:hover
+{
+	font-size: 18px;
+	color: darkcyan;
+}
+
+footer 
+{
+	text-align: center;
+	padding-top: 20px;
 }
