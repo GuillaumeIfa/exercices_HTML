@@ -82,9 +82,18 @@ footer
 
 @keyframes turn
 {
-    0%  {transform: rotate(0deg);}
-    25% {transform: rotate(25deg);}
-    50% {transform: rotate(50deg);}
+    0%  {
+    		transform: rotate(0deg);
+    		color: deeppink;
+    	}
+    25% {
+    		transform: rotate(25deg);
+			color: white;
+    	}
+    50% {
+    		transform: rotate(50deg);
+			color: black;		
+		}
 }
 
 
