@@ -1,0 +1,40 @@
+div
+{
+	border: 2px solid black;
+}
+
+.green
+{
+	background-color: limegreen;
+	padding: 40px;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+}
+
+.blue
+{
+	background-color: royalblue;
+	opacity: 0.8;
+	padding: 20px;
+	height: 50px;
+	width: 50px;
+}
+
+.chocolat
+{
+	background-color: sienna;
+	opacity: 0.8;
+	margin: 60px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 180px;
+	left: 180px;
+}
+
+.roof
+{
+	background-color: lightblue;
+	padding: 25px;
+}
