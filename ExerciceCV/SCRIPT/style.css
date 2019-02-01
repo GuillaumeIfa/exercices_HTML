@@ -22,6 +22,8 @@ li
 nav
 {
 	text-align: center;
+	position: sticky;
+	top: 0;
 }
 
 nav ul li
@@ -103,16 +105,19 @@ footer
 
 @keyframes turn
 {
-    0%  {
-    		transform: rotate(0deg);
-    		color: grey;
-    	}
-    25% {
-    		transform: rotate(25deg);
-    		color: white;
-    	}
-    50% {
-	    	transform: rotate(50deg);
+    0%
+		{
+    	transform: rotate(0deg);
+    	color: grey;
+    }
+    25%
+		{
+    	transform: rotate(25deg);
+    	color: white;
+    }
+    50% 
+		{
+	    transform: rotate(50deg);
 			color: deeppink;
-    	}
+    }
 }
