@@ -21,9 +21,11 @@ li
 
 nav
 {
+	background-color: lightgray;
 	text-align: center;
 	position: sticky;
 	top: 0;
+	z-index: 666;
 }
 
 nav ul li
@@ -43,6 +45,11 @@ a:visited
 	color: deeppink;
 }
 
+nav ul li a:visited
+{
+	color: green;
+}
+
 a:hover
 {
 	font-size: 20px;
@@ -54,11 +61,6 @@ nav ul li a:hover
 	font-size: 13px;
 	font-family: monospace;
 	font-weight: bold;
-}
-
-nav ul li a:visited
-{
-	color: green;
 }
 
 h1
