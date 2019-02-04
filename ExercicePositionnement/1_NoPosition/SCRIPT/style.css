@@ -1,0 +1,20 @@
+div
+{
+	padding: 20px;
+	border: 2px solid black;
+}
+
+.green
+{
+	background-color: limegreen;
+}
+
+.blue
+{
+	background-color: darkorchid;
+}
+
+.chocolat
+{
+	background-color: chocolate;
+}

@@ -1,0 +1,80 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+section
+{
+	display: flex;
+	flex: 10;
+}
+
+header
+{
+	flex: 2;
+	background-color: red;
+}
+
+ul
+{
+	display: flex;
+}
+
+li
+{
+	flex: 1;
+	list-style: none;
+	border: 1px solid black;
+}
+
+aside
+{
+	flex: 2;
+}
+
+#aside1
+{
+	display: flex;
+	background-color: yellow;
+}
+
+#aside2
+{
+	display: flex;
+	background-color: hotpink;
+}
+
+article
+{
+	display: flex;
+	background-color: lightblue;
+	flex: 10;
+	flex-wrap: wrap;
+}
+
+p
+{
+	flex: 1;
+	padding: 15px;
+	text-align: justify;
+	flex-basis: 200px;
+}
+
+footer
+{
+	flex: 1;
+	background-color: lightgreen;
+}
+
+
+
+

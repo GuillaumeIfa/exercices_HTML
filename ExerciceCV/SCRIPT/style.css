@@ -1,3 +1,9 @@
+@font-face
+{
+	font-family: "forgetica";
+	src: url('../FONT/SansForgetica-Regular.otf');
+}
+
 body
 {
 	width: 60%;
@@ -8,9 +14,30 @@ body
 	margin: auto;
 }
 
+li
+{
+	list-style: circle;
+}
+
+nav
+{
+	background-color: black;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 666;
+}
+
+nav ul li
+{
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+
 a
 {
-	color: green;
+	color: lime;
 }
 
 a:visited
@@ -18,8 +45,43 @@ a:visited
 	color: deeppink;
 }
 
+nav ul li a:visited
+{
+	color: green;
+}
+
+li:hover
+{
+	font-size: 18px;
+	color: darkcyan;
+}
+
+nav ul li a:hover
+{
+	font-size: 18px;
+	font-family: monospace;
+	font-weight: bold;
+	color: black;
+	text-shadow: 0px 0px 8px lime;
+}
+
 a:hover
 {
+	font-size: 20px;
+	font-family: "forgetica";
+}
+
+h1
+{
+	font-family: "forgetica";
+	text-align: center;
+	font-size: 40px;
+	color: lime;
+}
+
+h2
+{
+	text-align: center;
 	font-size: 25px;
 }
 
@@ -38,9 +100,19 @@ h3
 h4
 {
 	color: turquoise;
+	border-left-style: solid;
+	padding-left: 10px;
 }
 
-li
+footer
+{
+	margin-top: 25px;
+	text-align: center;
+	border-top: 1px solid black;
+	padding-top: 15px;
+}
+
+.turn
 {
 	list-style: none;
 	padding: 5px;
@@ -57,11 +129,6 @@ p:hover
 	color: yellow;
 }
 
-li:hover
-{
-	font-size: 18px;
-	color: darkcyan;
-}
 
 footer 
 {
@@ -71,6 +138,7 @@ footer
 
 .turn
 {
+
 	animation-name: turn;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
@@ -78,10 +146,13 @@ footer
 	animation-timing-function: linear;
 	font-size: 25px;
 	text-align: center;
+	display: inline-block;;
+	padding: 15px;
 }
 
 @keyframes turn
 {
+
     0%  {
     		transform: rotate(0deg);
     		color: deeppink;
@@ -95,5 +166,4 @@ footer
 			color: black;		
 		}
 }
-
 

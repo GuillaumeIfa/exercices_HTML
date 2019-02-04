@@ -1,0 +1,29 @@
+div
+{
+	border: 2px solid black;
+	position: relative;
+}
+
+.green
+{
+	background-color: limegreen;
+	padding: 20px;
+	margin-right: 55px;
+}
+
+.blue
+{
+	background-color: royalblue;
+	opacity: 0.8;
+	padding: 20px;
+	left: 100px;
+	margin-right: 25px;
+}
+
+.chocolat
+{
+	background-color: sienna;
+	opacity: 0.8;
+	padding: 20px;
+	left: -250px;
+}
