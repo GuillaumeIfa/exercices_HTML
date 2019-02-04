@@ -20,44 +20,58 @@ section
 
 header
 {
-	flex: 3;
+	flex: 2;
+	background-color: red;
 }
 
 ul
 {
 	display: flex;
+	flex: 1;
 }
 
 li
 {
 	flex: 1;
+	list-style: none;
+	border: 1px solid black;
+}
+
+aside
+{
+	flex: 2;
 }
 
 #aside1
 {
-	float: left;
 	display: flex;
+	background-color: yellow;
 }
 
 #aside2
 {
-	float: right;
 	display: flex;
+	background-color: hotpink;
 }
 
 article
 {
 	display: flex;
+	background-color: lightblue;
+	flex: 10;
 }
 
 p
 {
 	flex: 1;
+	padding: 15px;
+	text-align: justify;
 }
 
 footer
 {
 	flex: 1;
+	background-color: lightgreen;
 }
 
 
