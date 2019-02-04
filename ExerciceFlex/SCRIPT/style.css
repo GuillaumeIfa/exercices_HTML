@@ -1,0 +1,65 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+section
+{
+	display: flex;
+	flex: 10;
+}
+
+header
+{
+	flex: 3;
+}
+
+ul
+{
+	display: flex;
+}
+
+li
+{
+	flex: 1;
+}
+
+#aside1
+{
+	float: left;
+	display: flex;
+}
+
+#aside2
+{
+	float: right;
+	display: flex;
+}
+
+article
+{
+	display: flex;
+}
+
+p
+{
+	flex: 1;
+}
+
+footer
+{
+	flex: 1;
+}
+
+
+
+
