@@ -27,7 +27,6 @@ header
 ul
 {
 	display: flex;
-	flex: 1;
 }
 
 li
@@ -59,6 +58,7 @@ article
 	display: flex;
 	background-color: lightblue;
 	flex: 10;
+	flex-wrap: wrap;
 }
 
 p
@@ -66,6 +66,7 @@ p
 	flex: 1;
 	padding: 15px;
 	text-align: justify;
+	flex-basis: 200px;
 }
 
 footer
