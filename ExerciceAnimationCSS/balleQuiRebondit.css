@@ -3,12 +3,13 @@ body
 	font-family: monospace;
 }
 
-
 .conteneur
 {
 	height: 300px;
 	width: 45px;
-	border: 3px solid green;
+	border: 5px solid green;
+	margin: 25px;
+	display: block;
 }
 
 .rebond
@@ -19,9 +20,9 @@ body
 	border-radius: 50px;
 	position: relative;
 	animation-name: rebond;
-	animation-duration: 3s;
+	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease-in;
+	animation-timing-function: cubic-bezier(0.2,-0.3,0.8,1);
 }
 
 @keyframes rebond
@@ -31,23 +32,59 @@ body
 		top: 0px;
 	}
 
-	25%
+	10%
 	{
 		top: 255px;
 	}
 
-	50%
+	20%
 	{
-		top: 25px;
+		top: 160px;
 	}
 
-	75%
+	30%
+	{
+		top: 255px;
+	}
+
+	40%
+	{
+		top: 195px;
+	}
+
+	50%
+	{
+		top: 255px;
+	}
+
+	60%
+	{
+		top: 220px;
+	}
+
+	70%
+	{
+		top: 255px;
+	}
+
+	80%
+	{
+		top: 250px;
+	}
+
+	90%
 	{
 		top: 255px;
 	}
 
 	100%
 	{
-		top: 75px;
+		top: 255px;
 	}
+}
+
+img   /* ༼⁰o⁰；༽ */
+{
+	height: 40px;
+	padding: 4px;
 }
