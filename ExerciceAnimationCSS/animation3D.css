@@ -1,0 +1,67 @@
+.conteneur1
+{
+	background-color: lightgray;
+	height: 800px;
+	width: 1200px;
+	margin: auto;
+	position: relative;
+	perspective:1200px;
+}
+
+.conteneur2
+{
+	position: absolute;
+	background-color: lightgray;
+	transform: rotateX(90deg);
+	transform-style: preserve-3d;
+	top:100px;
+	left:100px;
+}
+.conteneur2 div
+{
+	top: 0;
+	left: 0;
+	margin: 0px;
+	height: 15px;
+	width: 15px;
+	border: 3px solid black;
+	border-radius: 5px;
+	display: block;
+	position: absolute;
+}
+
+.item1
+{
+	background-color: pink;
+	transform: rotateY(0deg) translateZ(150px);
+}
+
+.item2
+{
+	background-color: white;
+	transform: rotateY(60deg) translateZ(150px);
+}
+
+.item3
+{
+	background-color: lightgreen;
+	transform: rotateY(90deg) translateZ(150px);
+}
+
+.item4
+{
+	background-color: orange;
+	transform: rotateY(120deg) translateZ(150px);
+}
+
+.item5
+{
+	background-color: turquoise;
+	transform: rotateY(150deg) translateZ(150px);
+}
+
+.item6
+{
+	background-color: hotpink;
+	transform: rotateY(180deg) translateZ(150px);
+}

@@ -1,8 +1,20 @@
+body
+{
+	font-family: monospace;
+	text-align: center;
+}
+
+h1
+{
+	position: relative;
+	top: 200px;
+}
+
 .conteneur
 {
 	position: relative;
-	height: 500px;
-	width: 755px;
+	height: 450px;
+	width: 740px;
 	border: 3px solid black;
 	border-radius: 15px;
 	background-color: lightgrey;
@@ -10,18 +22,46 @@
 
 div > div
 {
+	padding-top: 5px;
 	position: absolute;
-	font-size: 50px;
-	top: 20px;
-	left: 20px;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bolder;
+	top: 10px;
+	left: 10px;
 	height: 35px;
 	width: 35px;
 	border: 3px solid black;
-	padding: 15px 15px;
 	border-radius: 15px;
 	animation-name: queue;
-	animation-duration: 5s;
+	animation-duration: 8s;
 	animation-iteration-count: infinite;
+	background-color: magenta;
+}
+
+.item2
+{
+	animation-delay: 1s;
+}
+
+.item3
+{
+	animation-delay: 2s;
+}
+
+.item4
+{
+	animation-delay: 3s;
+}
+
+.item5
+{
+	animation-delay: 4s;
+}
+
+.item6
+{
+	animation-delay: 5s;
 }
 
 @keyframes queue
@@ -30,13 +70,14 @@ div > div
 	{
 		top: 20px;
 		left: 20px;
-		background-color: orange;
+		transform: rotate(0deg);
 	}
 
 	25%
 	{
 		top: 20px;
 		left: 670px;
+		transform: rotate(360deg);
 		background-color: lime;
 	}
 
@@ -44,6 +85,7 @@ div > div
 	{
 		top: 380px;
 		left: 670px;
+		transform: rotate(720deg);
 		background-color: deeppink;
 	}
 
@@ -51,6 +93,7 @@ div > div
 	{
 		top: 380px;
 		left: 20px;
-		background-color: lightblue;
+		transform: rotate(360deg);
+		background-color: springgreen;
 	}
 }
