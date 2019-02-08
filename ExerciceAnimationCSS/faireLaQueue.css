@@ -27,15 +27,13 @@ div > div
 	display: inline-block;
 	font-size: 25px;
 	font-weight: bolder;
-	top: 10px;
-	left: 10px;
+	top: 20px;
+	left: 20px;
 	height: 35px;
 	width: 35px;
 	border: 3px solid black;
 	border-radius: 15px;
-	animation-name: queue;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
+	animation: queue 8s infinite linear;
 	background-color: magenta;
 }
 
