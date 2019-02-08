@@ -39,29 +39,39 @@ div > div
 	background-color: magenta;
 }
 
+.item1
+{
+	z-index: 7;
+}
+
 .item2
 {
 	animation-delay: 1s;
+	z-index: 6;
 }
 
 .item3
 {
 	animation-delay: 2s;
+	z-index: 5;
 }
 
 .item4
 {
 	animation-delay: 3s;
+	z-index: 4;
 }
 
 .item5
 {
 	animation-delay: 4s;
+	z-index: 3;
 }
 
 .item6
 {
 	animation-delay: 5s;
+	z-index: 2;
 }
 
 @keyframes queue
