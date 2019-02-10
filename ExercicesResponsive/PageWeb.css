@@ -7,15 +7,16 @@ body
 header
 {
 	text-align: center;
-	background-color: grey;
+	background-color: darkgrey;
 	margin: auto;
 	width: 90%;
+	box-shadow: 5px 5px 0px black;
 }
 
 footer
 {
 	text-align: center;
-	background-color: grey;
+	background-color: darkgrey;
 	margin: auto;
 	width: 90%;
 	display: none;
@@ -25,9 +26,10 @@ p
 {
 	margin: 15px;
 	text-align: justify;
-	background-color: lightgrey;
+	background-color: darkgrey;
 	width:30%;
 	padding: 15px;
+	box-shadow: 5px 5px 0px black;
 }
 
 section
@@ -35,7 +37,7 @@ section
 	display: flex;
 }
 
-@media (max-width: 640px)
+@media (max-width: 640px)		/*Change la disposition des paragraphes en dessous de 604 pixels*/
 {
 	section
 	{
@@ -48,7 +50,7 @@ section
 	}
 }
 
-@media (max-width: 800px)
+@media (max-width: 800px)		/*Cache le header en dessous de 800 pixels*/
 {
 	header
 	{
@@ -56,11 +58,17 @@ section
 	}	
 }
 
-@media print 
+@media print 		/*Affiche un footer à l'impression*/
 {
 	header
 	{
 		display: block;
+		box-shadow: none;
+	}
+
+	p
+	{
+		box-shadow: none;
 	}
 
 	footer
