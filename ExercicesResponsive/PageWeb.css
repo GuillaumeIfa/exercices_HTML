@@ -1,0 +1,70 @@
+body
+{
+	font-family: monospace;
+	background-color: gainsboro;
+}
+
+header
+{
+	text-align: center;
+	background-color: grey;
+	margin: auto;
+	width: 90%;
+}
+
+footer
+{
+	text-align: center;
+	background-color: grey;
+	margin: auto;
+	width: 90%;
+	display: none;
+}
+
+p
+{
+	margin: 15px;
+	text-align: justify;
+	background-color: lightgrey;
+	width:30%;
+	padding: 15px;
+}
+
+section
+{
+	display: flex;
+}
+
+@media (max-width: 640px)
+{
+	section
+	{
+		display: block;
+	}
+
+	p
+	{
+		width: 90%;
+	}
+}
+
+@media (max-width: 800px)
+{
+	header
+	{
+		display: none;
+	}	
+}
+
+@media print 
+{
+	header
+	{
+		display: block;
+	}
+
+	footer
+	{
+		display: block;
+	}	
+}
