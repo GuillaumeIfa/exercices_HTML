@@ -1,49 +1,99 @@
 body
 {
 	background-color: black;
-	color: mediumaquamarine;
+	color: deepskyblue;
 	font-family: monospace;
+	font-size: 18px;
 }
 
 h1
 {
-	font-size: 45px;
+	font-size: 35px;
 	font-weight: lighter;
-	margin: 15px;
+	margin: auto;
 }
 
 h2
 {
-	margin: 25px;
-	font-size: 35px;
+	font-size: 40px;
+	font-weight: lighter;
+	margin: auto;
+	padding: 25px;
 }
 
 h3
 {
-	float: left;
-	margin: 10px;
-}
-
-i
-{
-	display: flex;
-}
-
-.un
-{
-	display: inline-block;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: lighter;
 	margin: auto;
-	width: 45%;
 }
 
-.meteo
+p
 {
-	display: flex;
-	margin: 25px;
-	width: 45%;
+	text-align: center;
 }
 
-.right
+.Container
 {
-	float: right;
+	padding: 15px;
+	border-bottom: 1px solid;
+	column-count: 4;
+}
+
+.GridContainer
+{
+	display:grid;
+	grid-template-areas: 
+	'ville ville .     .   '
+	'date  date  .     .   '
+	'icon  temp  info  info' 
+	;
+	border-bottom: 1px solid;
+}
+
+#ville
+{
+	grid-area: ville;
+}
+
+#date
+{
+	grid-area: date;
+
+}
+
+#icon
+{
+	grid-area: icon;
+	margin: auto;
+}
+
+#temp
+{
+	grid-area: temp;
+}
+
+#info
+{
+	grid-area: info;
+	text-align: justify;
+	margin: auto;
+	font-size: 16px;
+}
+
+
+
+@media (min-width: 900px) 
+{
+	.Container
+	{
+		display: inline-block;
+		column-count: 1;
+	}
+
+	.hide
+	{
+		display: none;
+	}
 }
