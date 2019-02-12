@@ -9,10 +9,41 @@ h1
 {
 	font-size: 45px;
 	font-weight: lighter;
+	margin: 15px;
+}
+
+h2
+{
+	margin: 25px;
+	font-size: 35px;
+}
+
+h3
+{
+	float: left;
+	margin: 10px;
+}
+
+i
+{
+	display: flex;
 }
 
 .un
 {
-	display: flex;
+	display: inline-block;
 	margin: auto;
+	width: 45%;
+}
+
+.meteo
+{
+	display: flex;
+	margin: 25px;
+	width: 45%;
+}
+
+.right
+{
+	float: right;
 }
