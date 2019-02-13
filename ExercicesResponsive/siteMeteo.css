@@ -1,9 +1,10 @@
 body
 {
 	background-color: black;
-	color: deepskyblue;
+	color: mediumspringgreen;
 	font-family: monospace;
 	font-size: 18px;
+	text-align: center;
 }
 
 h1
@@ -34,6 +35,11 @@ p
 	text-align: center;
 }
 
+i
+{
+	font-size: 48px;
+}
+
 .Container
 {
 	padding: 15px;
@@ -45,8 +51,8 @@ p
 {
 	display:grid;
 	grid-template-areas: 
-	'ville ville .     .   '
-	'date  date  .     .   '
+	'ville .     .     .   '
+	'date  .     info  info'
 	'icon  temp  info  info' 
 	;
 	border-bottom: 1px solid;
@@ -60,13 +66,13 @@ p
 #date
 {
 	grid-area: date;
-
 }
 
 #icon
 {
 	grid-area: icon;
 	margin: auto;
+	font-size: 60px;
 }
 
 #temp
@@ -90,6 +96,7 @@ p
 	{
 		display: inline-block;
 		column-count: 1;
+		width: 12%;
 	}
 
 	.hide
