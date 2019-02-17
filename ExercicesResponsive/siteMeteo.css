@@ -94,7 +94,7 @@ i
 {
 	.Container
 	{
-		display: inline-block;
+		display: inline-grid;
 		column-count: 1;
 		width: 12%;
 	}
