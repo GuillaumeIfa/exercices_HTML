@@ -1,0 +1,34 @@
+body
+{
+	background-color: black;
+	color: mediumspringgreen;
+	font-family: monospace;
+	font-size: 18px;
+	text-align: center;
+}
+
+.fa-align-justify
+{
+	position: fixed;
+	top: 3px;
+	right: 3px;
+}
+
+.fa-cat
+{
+	position: fixed;
+	top: 3px;
+	left: 3px;
+}
+
+#logo
+{
+	text-align: center;
+	position: relative;
+	font-size: 55px;
+}
+
+section
+{
+	text-align: justify;
+}
