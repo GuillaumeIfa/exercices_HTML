@@ -55,10 +55,10 @@ section
 	header
 	{
 		display: none;
-	}	
+	}
 }
 
-@media print 		/*Affiche un footer à l'impression*/
+@media print		/*Affiche un footer à l'impression*/
 {
 	header
 	{
@@ -74,5 +74,5 @@ section
 	footer
 	{
 		display: block;
-	}	
+	}
 }

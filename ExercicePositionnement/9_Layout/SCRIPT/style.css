@@ -10,7 +10,7 @@ ul
 {
 	float: left;
 	position: sticky;
-	position: -webkit-sticky;  /* Godamn Safari ! */
+	position: -webkit-sticky;	/* Godamn Safari ! */
 	top: 0;
 	background-color: chocolate;
 	opacity: 1;
@@ -27,7 +27,7 @@ div
 	padding: 55px;
 }
 
-footer 
+footer
 {
 	background-color: black;
 	color: white;
