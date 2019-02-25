@@ -107,21 +107,21 @@ footer
 
 @keyframes turn
 {
-    0%
+	0%
 	{
-    	transform: rotate(0deg);
-    	color: grey;
-    }
+		transform: rotate(0deg);
+		color: grey;
+	}
 
-    25%
+	25%
 	{
-    	transform: rotate(25deg);
-    	color: white;
-    }
-    
-    50% 
+		transform: rotate(25deg);
+		color: white;
+	}
+
+	50% 
 	{
-	    transform: rotate(50deg);
-			color: deeppink;
-    }
+		transform: rotate(50deg);
+		color: deeppink;
+	}
 }
