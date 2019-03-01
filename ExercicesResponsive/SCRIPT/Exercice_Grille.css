@@ -5,6 +5,7 @@ body
 	font-family: monospace;
 	font-size: 18px;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 .fa-align-justify
@@ -31,4 +32,70 @@ body
 section
 {
 	text-align: justify;
+}
+
+p
+{
+	border: 1px solid mediumspringgreen;
+	padding: 12px;
+	margin: 15px;
+	box-sizing: border-box;
+}
+
+ul li
+{
+	display: inline-block;
+}
+
+.conteneur
+{
+	display: inline-flex;
+}
+
+.ham
+{
+	visibility: hidden;
+}
+
+.lg3
+{
+	width: calc(100%/3);
+}
+
+@media screen and (max-width:900px)
+{
+	.md1
+	{
+		width: calc(100%/1);
+	}
+
+	.conteneur
+	{
+		display: block;
+		margin: auto;
+		box-sizing: border-box;
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width:700px)
+{
+	.sm1
+	{
+		width: calc(100%/1);
+	}
+
+	ul li
+	{
+		visibility: hidden;
+	}
+
+	.ham
+	{
+		visibility: visible;
+	}
+	.conteneur
+	{
+		width: 100%;
+	}
 }
