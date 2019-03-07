@@ -6,12 +6,12 @@
 
 body
 {
-/* 	width: 70%;
-	 */	text-align: justify;
+	text-align: justify;
 	background-color: lightgray;
 	color: black;
 	font-family: monospace;
 	margin: auto;
+	max-width: 1080px;
 }
 
 li
@@ -27,14 +27,14 @@ nav
 	top: 0;
 	z-index: 666;
 	border-bottom: 1px double #428b64;
-	padding: 8px;
+	padding: 0px;
 }
 
 nav ul li
 {
 	display: inline-block;
 	text-align: center;
-	padding: 5px;
+	padding: 2px;
 }
 
 a
@@ -86,6 +86,11 @@ h3
 	padding-left: 10px;
 }
 
+.haut
+{
+	height: 25px;
+}
+
 .conteneur
 {
 	display: flex;
@@ -109,7 +114,7 @@ footer
 	margin-top: 25px;
 	text-align: center;
 	border-top: 1px solid black;
-	padding-top: 15px;
+	padding: 15px 0px;
 }
 
 .turn0
@@ -123,6 +128,7 @@ footer
 	text-align: center;
 	display: block;
 	margin: auto;
+	padding: 25px;
 }
 
 .turn1
@@ -134,6 +140,7 @@ footer
 	text-align: center;
 	display: block;
 	margin: auto;
+	padding: 25px;
 }
 
 .turn2
@@ -147,6 +154,7 @@ footer
 	text-align: center;
 	display: block;
 	margin: auto;
+	padding: 25px;
 }
 
 .js
@@ -155,7 +163,7 @@ footer
 	margin: auto;
 	padding: 20px;
 	text-align: center;
-	height: 1vh;
+	height: 5vh;
 }
 
 @keyframes turn0
@@ -229,20 +237,20 @@ footer
 	0%
 	{
 		color: grey;
-		font-size: 20px;
+		font-size: 27.5px;
 		text-shadow: 2px 3px 5px black;
 	}
 
 	25%
 	{
-		font-size: 25px;
+		font-size: 30px;
 		text-shadow: 5px 8px 2px black;
 	}
 
 	50% 
 	{
 		color: deeppink;
-		font-size: 30px;
+		font-size: 33px;
 		text-shadow: 9px 15px 8px black;
 	}
 }
@@ -352,7 +360,7 @@ footer
 	{
 		display: flex;
 		padding: 5px 0px;
-		margin: 10px;
+		margin: auto;
 	}
 
 	nav
@@ -361,4 +369,23 @@ footer
 	}
 }
 
+@media print
+{
+	.print
+	{
+		display: none;
+	}
 
+	.conteneur
+	{
+		width: 100%;
+	}
+
+	.turn0, .turn1, .turn2, .js, h1, h2, h3
+	{
+		padding: 3px;
+		margin: 3px;
+		font-size: 20px;
+		height: 25px;
+	}
+}
