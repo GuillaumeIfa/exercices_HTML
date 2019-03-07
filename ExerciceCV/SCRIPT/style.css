@@ -6,8 +6,8 @@
 
 body
 {
-	width: 60%;
-	text-align: justify;
+/* 	width: 70%;
+	 */	text-align: justify;
 	background-color: lightgray;
 	color: black;
 	font-family: monospace;
@@ -26,6 +26,8 @@ nav
 	position: sticky;
 	top: 0;
 	z-index: 666;
+	border-bottom: 1px double #428b64;
+	padding: 8px;
 }
 
 nav ul li
@@ -37,7 +39,7 @@ nav ul li
 
 a
 {
-	color: green;
+	color: #428b64;
 }
 
 a:visited
@@ -47,7 +49,7 @@ a:visited
 
 nav ul li a:visited
 {
-	color: green;
+	color: #428b64;
 }
 
 a:hover
@@ -84,6 +86,24 @@ h3
 	padding-left: 10px;
 }
 
+.conteneur
+{
+	display: flex;
+	width: 75%;
+	margin: auto;
+}
+
+.lg1 {width: calc(100%/1); }
+.lg2 {width: calc(100%/2); }
+.lg3 {width: calc(100%/3); }
+.lg4 {width: calc(100%/4); }
+.lg5 {width: calc(100%/5); }
+.lg6 {width: calc(100%/6); }
+.lg7 {width: calc(100%/7); }
+.lg8 {width: calc(100%/8); }
+.lg9 {width: calc(100%/9); }
+.lg10{width: calc(100%/10);}
+
 footer
 {
 	margin-top: 25px;
@@ -92,20 +112,52 @@ footer
 	padding-top: 15px;
 }
 
-.turn
+.turn0
 {
-	animation-name: turn;
+	animation-name: turn0;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
 	animation-timing-function: linear;
 	font-size: 25px;
 	text-align: center;
-	display: inline-block;;
-	padding: 15px;
+	display: block;
+	margin: auto;
 }
 
-@keyframes turn
+.turn1
+{
+	animation-name: turn1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	font-size: 25px;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.turn2
+{
+	animation-name: turn2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	font-size: 25px;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.js
+{
+	display: inline-flex;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+@keyframes turn0
 {
 	0%
 	{
@@ -125,3 +177,187 @@ footer
 		color: deeppink;
 	}
 }
+
+@keyframes turn1
+{
+	0%
+	{
+		transform: rotate(0deg);
+		color: grey;
+		text-shadow: 1px 1px 8px deeppink;
+	}
+
+	25%
+	{
+		transform: rotate(180deg);
+		color: white;
+		text-shadow: 1px 8px 5px grey;
+	}
+
+	50% 
+	{
+		transform: rotate(360deg);
+		color: deeppink;
+		text-shadow: 1px 25px 1px black;
+	}
+}
+
+@keyframes turn2
+{
+	0%
+	{
+		transform: rotate(0deg);
+		color: grey;
+	}
+
+	25%
+	{
+		transform: rotate(-25deg);
+		color: white;
+	}
+
+	50% 
+	{
+		transform: rotate(-50deg);
+		color: deeppink;
+	}
+}
+
+@keyframes js
+{
+	0%
+	{
+		color: grey;
+		font-size: 20px;
+		text-shadow: 2px 3px 5px black;
+	}
+
+	25%
+	{
+		font-size: 25px;
+		text-shadow: 5px 8px 2px black;
+	}
+
+	50% 
+	{
+		color: deeppink;
+		font-size: 30px;
+		text-shadow: 9px 15px 8px black;
+	}
+}
+
+.js0
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 200ms;
+	font-size: 15px;
+}
+
+.js1
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 400ms;
+	font-size: 15px;
+}
+
+.js2
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 600ms;
+	font-size: 15px;
+}
+
+.js3
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 800ms;
+	font-size: 15px;
+}
+
+.js4
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 1000ms;
+	font-size: 15px;
+}
+
+@media screen and (max-width:900px)
+{
+	.md1 {width: calc(100%/1); }
+	.md2 {width: calc(100%/2); }
+	.md3 {width: calc(100%/3); }
+	.md4 {width: calc(100%/4); }
+	.md5 {width: calc(100%/5); }
+	.md6 {width: calc(100%/6); }
+	.md7 {width: calc(100%/7); }
+	.md8 {width: calc(100%/8); }
+	.md9 {width: calc(100%/9); }
+	.md10{width: calc(100%/10);}
+
+	.conteneur
+	{
+		display: flex;
+		margin: auto;
+		box-sizing: border-box;
+		width: 90%;
+	}
+
+	nav
+	{
+		padding: 1px;
+	}
+}
+
+@media only screen and (max-width:700px)
+{
+	.sm1 {width: calc(100%/1); }
+	.sm2 {width: calc(100%/2); }
+	.sm3 {width: calc(100%/3); }
+	.sm4 {width: calc(100%/4); }
+	.sm5 {width: calc(100%/5); }
+	.sm6 {width: calc(100%/6); }
+	.sm7 {width: calc(100%/7); }
+	.sm8 {width: calc(100%/8); }
+	.sm9 {width: calc(100%/9); }
+	.sm10{width: calc(100%/10);}
+
+	.conteneur
+	{
+		width: 95%;
+		display: flex;
+	}
+
+	.js
+	{
+		display: flex;
+		padding: 5px 0px;
+		margin: 10px;
+	}
+
+	nav
+	{
+		display: none;
+	}
+}
+
+
