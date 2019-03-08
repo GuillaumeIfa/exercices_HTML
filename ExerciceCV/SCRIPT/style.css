@@ -21,7 +21,7 @@ li
 
 nav
 {
-	background-color: lightgray;
+	background-color: rgba(211, 211, 211, 0.8);
 	text-align: center;
 	position: sticky;
 	top: 0;
@@ -71,6 +71,12 @@ h1
 	text-align: center;
 	font-size: 40px;
 	color: black;
+	animation-name: shadow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
 }
 
 h2
@@ -84,6 +90,14 @@ h3
 	font-size: 20px;
 	border-left-style: solid;
 	padding-left: 10px;
+}
+
+footer
+{
+	margin-top: 25px;
+	text-align: center;
+	border-top: 1px solid black;
+	padding: 15px 0px;
 }
 
 .haut
@@ -108,14 +122,6 @@ h3
 .lg8 {width: calc(100%/8); }
 .lg9 {width: calc(100%/9); }
 .lg10{width: calc(100%/10);}
-
-footer
-{
-	margin-top: 25px;
-	text-align: center;
-	border-top: 1px solid black;
-	padding: 15px 0px;
-}
 
 .turn0
 {
@@ -164,6 +170,61 @@ footer
 	padding: 20px;
 	text-align: center;
 	height: 5vh;
+}
+
+.js0
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 200ms;
+	font-size: 15px;
+}
+
+.js1
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 400ms;
+	font-size: 15px;
+}
+
+.js2
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 600ms;
+	font-size: 15px;
+}
+
+.js3
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 800ms;
+	font-size: 15px;
+}
+
+.js4
+{
+	animation-name: js;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	animation-delay: 1000ms;
+	font-size: 15px;
 }
 
 @keyframes turn0
@@ -255,60 +316,15 @@ footer
 	}
 }
 
-.js0
+@keyframes shadow 
 {
-	animation-name: js;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: linear;
-	animation-delay: 200ms;
-	font-size: 15px;
+  0%   {text-shadow: 15px 15px 10px};
+  25%  {text-shadow: 12.5px 12.5px 8px};
+  50%  {text-shadow: 10px 10px 6px};
+  75%  {text-shadow: 5px 5px 4px};
+  100% {text-shadow: 2px 2px 2px};
 }
 
-.js1
-{
-	animation-name: js;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: linear;
-	animation-delay: 400ms;
-	font-size: 15px;
-}
-
-.js2
-{
-	animation-name: js;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: linear;
-	animation-delay: 600ms;
-	font-size: 15px;
-}
-
-.js3
-{
-	animation-name: js;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: linear;
-	animation-delay: 800ms;
-	font-size: 15px;
-}
-
-.js4
-{
-	animation-name: js;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: linear;
-	animation-delay: 1000ms;
-	font-size: 15px;
-}
 
 @media screen and (max-width:900px)
 {
